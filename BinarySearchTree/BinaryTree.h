@@ -15,6 +15,7 @@ private:
 	void push(Node*, int);
 	void print(Node*, int);
 	bool contains(Node*, int);
+	int counter;
 public:
 	Tree();
 	void push(int);
