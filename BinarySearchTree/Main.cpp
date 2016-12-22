@@ -12,6 +12,9 @@ int main(int argc, char *argv[])
 	tree.push(20);
 	tree.print();
 
+	std::cout << tree.contains(18) << "\n";
+	std::cout << tree.contains(21) << "\n";
+
 	std::cout << "\n\nC++ version: " << __cplusplus << "\n" << "Press ENTER to exit" << "\n";
 	std::cin.ignore();
 

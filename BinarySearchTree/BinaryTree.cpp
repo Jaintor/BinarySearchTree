@@ -69,3 +69,27 @@ void Tree::print()
 {
 	print(root);
 }
+
+bool Tree::contains(Node *node, int data)
+{
+	if (!node) {
+		return false;
+	}
+	else if (data < node->data)
+	{
+		contains(node->left, data);
+	}
+	else if (data > node->data)
+	{
+		contains(node->right, data);
+	}
+	else
+	{
+		return true;
+	}
+}
+
+bool Tree::contains(int data) 
+{
+	return contains(root, data);
+}

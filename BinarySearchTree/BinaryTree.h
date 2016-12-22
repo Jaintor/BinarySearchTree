@@ -14,6 +14,7 @@ private:
 	Node* create(int);
 	void push(Node*, int);
 	void print(Node*, int);
+	bool contains(Node*, int);
 public:
 	Tree();
 	void push(int);
